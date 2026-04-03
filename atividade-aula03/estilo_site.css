@@ -1,18 +1,34 @@
 body{
     background-color: #87cefa;
 }
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
 .header{
     width: 100%;
     height: 300px;
     background: linear-gradient(to bottom, #7b68ee,#87cefa);
     
 }
-.links a{
+
+.links{
+    display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    margin: 0;
-    padding: 20px;
 }
+
+.links a{
+    text-decoration: none;
+    padding: 10px;
+}
+
+
 
 .parte-central{
     width: 100%;
@@ -37,16 +53,25 @@ body{
     height: 60vh;
     padding: 20px;
     background: linear-gradient(to bottom, #87cefa, #7b68ee);
-    position: relative;
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
 } 
 
-.h1{
+.footer h1{
+    margin: 0;
     font-size: 30px;
+    
 }
 
 .imagem-footer{
-    position: fixed;
-    bottom: 40px;
-    right: 40px;
+    position: static;
+
+}
+
+.imagem-footer img{
+    width: 80px;
+    height: auto;
+
 }
